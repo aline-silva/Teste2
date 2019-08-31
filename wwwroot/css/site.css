@@ -1,0 +1,214 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+/*Edita as configurações gerais da página*/
+body{
+    background-color: #ffffff;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+/*Gerencia a barra de navegação*/
+ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #111;   
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color:#ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.logo){
+    background-color: #111;
+}
+.logo{
+    background-color: #28B615;
+    color:#111;
+}
+/*Quadros dos corpos principais*/
+div{
+    background-color: #eeeeff;
+}
+.quadroprincipal{
+    flex: 70%;
+    background-color: #aaa;
+    padding: 20px;
+}
+.quadroimagem{
+    background-color: #aaa;
+    width: 96%;
+    padding: 2%;
+    height: 250px;
+    border-radius: 15px;
+    filter: blur(5px);
+}
+.blocointerno{
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    width: 80%;
+    margin:0 auto;
+    border: 1px solid #E50000;
+    padding: 3rem;
+}
+.titulosmanuais{
+    font-family: 'Vibur', cursive;
+    color: #ffffff;
+    font-size: 78px;
+    opacity: 0.2;
+}
+/*Efeitos interativos*/
+.quadroimagem h3:hover{
+    transition: 1s;
+    opacity: 1;
+}
+.quadroimagem:hover{
+    filter: blur(0px);
+    transition: 1s;
+}
+/*Tabelas de texto e imagens*/
+table{
+    border-collapse: collapse;
+    width: 96%;
+    margin: 2%;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover:not(th){
+    background-color: #28B615;
+    color: #fff;
+    transition: 1s;
+}
+th{
+    background-color: #28B615;
+    color: #ffffff;
+}
+form{
+    margin: 5px;
+    padding: 5px;
+}
+input[type=text]:not(.lupa),
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=number],
+input[type=range],
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.caixaformulario{
+    width: 50%;
+    margin-left:25%; 
+}
+input[type=reset],
+input[type=submit],
+button{
+    width: 25%;
+    background-color: #708090;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset]:active,
+input[type=submit]:active,
+button:active{
+    transition: 0.3s;
+    transform: scale(0.9);
+    background-color: #506070;
+}
+input[type=text]:focus:not(.lupa),
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=range]:focus,
+select:focus{
+    transition: 0.5s;
+    background-color: #FDF9F9;
+}
+.lupa{
+    width: 60%;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    background-image: url(../img/lupa.png);
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 2px;
+    text-align: right;
+    transition: width 0.4s ease-in-out;
+}
+.lupa:focus{
+    transition: 0.5s;
+    width: 100%;
+}
+.icone{
+    margin: 0;
+    padding: 0px;
+}
+.etiquetas{
+    margin: 10px;
+}
+.painelimagem{
+    background-color: #827F7F;
+    width: 96%;
+    padding: 2%;
+    height: 250px;
+    border-radius: 15px;
+}
